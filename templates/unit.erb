@@ -11,6 +11,7 @@ Requires=zookeeper.service
 Type=simple
 User=kafka
 Group=kafka
+EnvironmentFile=-/etc/environment
 SyslogIdentifier=<%= @service_name %>
 <%- case @service_name 
   when 'kafka' -%>
